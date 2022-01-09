@@ -1,0 +1,379 @@
+/*
+-----------------FUENTES---------------
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans 3', sans-serif;
+*/
+/*INDEX*/
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	text-decoration: none;
+	font-style: none;
+	color: #000;
+}
+body {
+    background-color: #0D0D0D;
+	font-family: 'Montserrat', sans-serif;
+}
+header{
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+.titInicialMinimal {
+	font-style: italic; 
+text-align: center;
+color: #fff;
+}
+/*BARRA DE NAVEGACION*/
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	background: #0D0D0D;
+	
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff7f7;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+/* EFECTO BOTONES*/
+.navMenu{
+	display: flex;
+}
+
+/* SUBMENU*/
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+.containerIndex {  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1.2fr 1.1fr 1fr 1fr 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:"header header header header header header""section1 section1 section1 section1 section1 section1""section1 section1 section1 section1 section1 section1""section2 section2 section2 section2 section2 section2""section2 section2 section2 section2 section2 section2""footer footer footer footer footer footer";
+}
+
+.header { grid-area: header; }
+
+.section1 { grid-area: section1; }
+
+.section2 { grid-area: section2; }
+
+.footer { grid-area: footer;  
+
+/*BANNER*/
+.banner{
+	width: 100%;
+	height: 90vh;
+	background-image: url(../imagenes/Minimal\ Inicio.png);
+	background-size: cover;
+	background-position: center;
+}
+.bannerTitle{
+	text-align: left;
+	color: #fff;
+	font-size: 100px;
+	padding: 220px 120px;
+}
+/*SECTION*/
+.section1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin:50px;
+	color: #fff;
+}
+.section1Texto{
+	padding-left: 70px;
+	padding-right: 50px;
+}
+.section1Title{
+	padding: 20px 0;
+	font-size: 50px;
+}
+.section1Descrip{
+	padding: 20px 0;
+	font-size: 18px;
+}
+.section1Img{
+	width: 100%;
+}
+
+/*FOOTER*/
+#footer {
+	margin-top: 80px;
+	padding: 20px 0 0 0;
+	text-align: center;
+	color: #fff;
+}
+#footer {
+	background: #262626;
+}
+#footer a{
+	color: #fff;
+}
+#footer a:hover{
+	color: #585858;
+}
+.footerImg{
+	width: 20%;
+}
+.list-inline{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+.list-inline-item{
+	padding: 10px;
+}
+.footerb {
+	background-color: #595959;
+	height: 40px;
+}
+.footerb p {
+	font-size: 12px;
+	padding: 12px;
+}
+
+/*FIN FOOTER*/
+
+/*NOSOTROS*/
+.sectionNosotrosImg {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+/*FIN NOSOTROS*/
+
+/*CONTACTO*/
+form {
+	width: 300px;
+	margin: auto;
+	background: #ddd;
+	padding: 20px;
+	margin-top: 20px;
+	color: black;
+	border: 1px solid black;
+}
+h1 {
+	text-align: start;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+label, input,select {
+	width: 100%;
+	display: block;
+	font-size: 1.2em;
+}
+input, select {
+	padding: 5px;
+	margin-bottom: 20px;
+}
+input[type="submit"] {
+	width: 30%;
+	margin: auto;
+	background: #333;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.error {
+	color: red;}
+
+
+/*FIN CONTACTO*/
+
+/*TIENDA*/
+.Grid-tienda{}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.card {
+background-color: #fff;
+border-radius: 2px;
+box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+margin: 0 auto;
+max-width: 340px;
+}
+
+.card-media {
+width: 100%;
+}
+
+.card-details {
+padding: 5px 15px;
+}
+
+.card-head {
+font-weight: 400;
+}
+
+.card-head {
+font-size: 26px;
+margin-bottom: 15px;
+}
+
+.card-action-button {
+border-radius: 2px;
+color: #FFAB40;
+cursor: pointer;
+display: inline-block;
+font-weight: 500;
+margin: 0;
+padding: 10px;
+text-decoration: none;
+}
+
+.card-action-button:hover {
+background-color: rgba(255 ,168 ,58, .2);
+}
+
+
+
+/*FIN TIENDA*/
+
+/* USTEDES*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 0.9fr 1.1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:"header header header header""header header header header""section1 section1 section2 section2""section1 section1 section2 section2""section3 section3 section4 section4""section3 section3 section4 section4""footer footer footer footer""footer footer footer footer";
+}
+
+.headerUstedes { grid-area: header;
+background-color: red;
+height: 24vh;
+}
+
+.seccion1{ grid-area: section1;
+background-color: rebeccapurple;
+height: 26,1vh;
+}
+
+.seccion2 { grid-area: section2;
+background-color: royalblue;
+height: 26,1vh;
+}
+
+.seccion3 { grid-area: section3;
+background-color: wheat;
+height: 25,1vh;
+}
+
+.seccion4 { grid-area: section4;
+background-color: orange;
+height: 25,1vh;
+}
+
+.footerUstedes { grid-area: footer; 
+background-color: greenyellow;
+height: 25vh;
+} 
+.Grid-Ustedes{
+	display: grid
+	
+
+}
+
+.h1Ustedes{
+	font-size: none;
+	color: #fff;
+}
+.h2Ustedes{
+	font-size: none;
+	color: #fff;
+}
+.sectionUstedesImg1{
+	width: 10%;
+
+}
+.sectionUstedesImg2{
+	width: 10%;
+
+}
+.sectionUstedesImg3{
+	width: 10%;
+
+}
+.sectionUstedesImg4{
+	width: 10%;
+
+}
+.sectionUstedesImg5{
+	width: 10%;
+
+}
+.sectionUstedesImg6{
+	width: 10%;
+
+}
+
+
+@media (max-width: 420px) {
+	.container {
+		grid-template-areas:"header header header header""header header header header""section1 section1 section1 section1""section2 section2 section2 section2""section3 section3 section3 section3""section4 section4 section4 section4""footer footer footer footer""footer footer footer footer";
+	}
+}
+
+
+
+/*  FIN USTEDES*/   
