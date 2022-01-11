@@ -29,11 +29,64 @@ header{
 	font-style: italic; 
 text-align: center;
 color: #fff;
+margin: 10px;
 }
+.containerAnimacion{
+	display: flex;
+	justify-content: center;
+	align-items:center
+}
+.agrandar{
+	animation-name: agrandar;
+	-o-animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-direction: alternate ;
+}
+@keyframes agrandar{
+	from{
+	transform: scale(1.1)
+	}
+	to{
+	transform: scale(2.0)
+	}
+}
+
+
+
+
+/* index nuevo*/
+.containerIndexnuevo {  display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	"header header header header header header header"
+	"header header header header header header header"
+	"banner banner . info-a-compradores info-a-compradores info-a-compradores info-a-compradores"
+	"banner banner . info-a-compradores info-a-compradores info-a-compradores info-a-compradores"
+	"banner banner . info-a-compradores info-a-compradores info-a-compradores info-a-compradores"
+	". . . . . . ."
+	"footer footer footer footer footer footer footer";
+}
+
+.headerIndexnuevo { grid-area: header; }
+
+.bannerIndexnuevo { grid-area: banner; }
+
+.info-a-compradoresIndexnuevo { grid-area: info-a-compradores;
+
+}
+
+.footerIndexnuevo { grid-area: footer; }
+
 /*BARRA DE NAVEGACION*/
 .navegacion{
 	width: 1000px;
-	margin: 30px auto;
+	margin: 20px auto;
 	background: #0D0D0D;
 	
 }
@@ -105,19 +158,20 @@ color: #fff;
 .footer { grid-area: footer;  
 
 /*BANNER*/
+
 .banner{
 	width: 100%;
 	height: 90vh;
 	background-image: url(../imagenes/Minimal\ Inicio.png);
 	background-size: cover;
-	background-position: center;
+	background-position : center;
 }
 .bannerTitle{
 	text-align: left;
 	color: #fff;
 	font-size: 100px;
 	padding: 220px 120px;
-}
+} 
 /*SECTION*/
 .section1{
 	display: flex;
@@ -139,7 +193,8 @@ color: #fff;
 	font-size: 18px;
 }
 .section1Img{
-	width: 100%;
+	width: 2vh;
+	height: 1vh;
 }
 
 /*FOOTER*/
